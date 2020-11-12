@@ -4,11 +4,53 @@
   box-sizing: border-box;
 }
 
-/* My banner */
-.my__bannar {
+/* Button toggle */
+button.navbar-toggler {
+  background: white;
+}
+/* Header */
+header {
   background-image: url("images/1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 1000px;
+}
+
+/* My banner */
+.my__bannar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.myBanner__title {
+  padding: 10% 0 0 6%;
+  text-align: right;
+}
+
+.myBanner__title > h1 {
+  font-size: 60px;
+  color: white;
+}
+
+.myBanner__middleEver {
+  margin-right: 15%;
+}
+
+/* Media query */
+@media (max-width: 576px) {
+  header {
+    height: 900px;
+  }
+  .myBanner__title {
+    text-align: center;
+  }
+  .myBanner__middleEver {
+    margin-right: 0;
+  }
+
+  .myBanner__title > h1 {
+    font-size: 40px;
+  }
 }
